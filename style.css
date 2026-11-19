@@ -1,0 +1,160 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #0b132b;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header button {
+    color: #ffffff;
+    background-color: #00b4d8;
+    border: none;
+    padding: 10px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: blueviolet;
+    padding: 12px 40px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav p {
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+}
+
+/* esconde uma tela (o JavaScript tira e coloca essa classe) */
+.escondida {
+    display: none;
+}
+
+/* botões da tela inicial */
+.escolha {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.escolha button {
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #0b132b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.escolha button:hover {
+    background-color: blueviolet;
+}
+
+/* formulários */
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form input, .form select {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.form input[type="text"] {
+    flex: 1;
+    min-width: 150px;
+}
+
+.form button {
+    color: #ffffff;
+    background-color: #00b4d8;
+    border: none;
+    padding: 10px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* lista de tarefas */
+.list ol {
+    padding-left: 20px;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+.itemList {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.itemList span {
+    flex: 1;
+}
+
+.acao {
+    cursor: pointer;
+}
+
+.tracado {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.atrasada {
+    color: #d62839;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #111;
+    color: #adb5bd;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    width: 100%;
+}

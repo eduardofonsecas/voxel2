@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voxel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo-voxel.png" class="minha-imagem" alt="Logo Voxel">
+        <h1>VOXEL</h1>
+        <button id="btnInicio">Início</button>
+    </header>
+
+    <nav>
+        <p>Bem-vindos a voxel</p>
+    </nav>
+
+    <main>
+        <!-- TELA 1: escolher quem está usando -->
+        <section id="telaInicio">
+            <h2>Quem está usando?</h2>
+            <div class="escolha">
+                <button id="btnGestor">Sou Gestor</button>
+                <button id="btnColaborador">Sou Colaborador</button>
+            </div>
+        </section>
+
+        <!-- TELA 2: gestor -->
+        <section id="telaGestor" class="escondida">
+            <h2>Lançar tarefa</h2>
+            <div class="form">
+                <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+                <select id="selectResponsavel"></select>
+                <input type="time" id="horario" value="18:00">
+                <button id="addButton">Adicionar</button>
+            </div>
+
+            <h2>Colaboradores</h2>
+            <div class="form">
+                <input type="text" id="novoColaborador" placeholder="Nome do colaborador">
+                <button id="addColaborador">Cadastrar</button>
+            </div>
+
+            <h2>Tarefas lançadas</h2>
+            <p id="resumoGestor"></p>
+            <div class="list">
+                <ol id="listaGestor"></ol>
+            </div>
+        </section>
+
+        <!-- TELA 3: colaborador -->
+        <section id="telaColaborador" class="escondida">
+            <h2>Minhas tarefas</h2>
+            <div class="form">
+                <label for="selectColaborador">Quem é você?</label>
+                <select id="selectColaborador"></select>
+            </div>
+            <p id="resumoColaborador"></p>
+            <div class="list">
+                <ol id="listaColaborador"></ol>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Voxel. Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
